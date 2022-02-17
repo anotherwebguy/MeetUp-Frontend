@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2family=Poppins:wght@300;400;500;600;700&display=swap');
+/** Start Header CSS **/
+
+header {
+    width: 1290px;
+    margin: auto;
+    max-width: 95%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 65px;
+}
+
+
+header .btn-try {
+    display: flex;
+    flex-direction: column;
+}
+
+header .btn-try button {
+    font-family: inherit;
+    padding: 10px 30px;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #525FFB;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    line-height: 27px;
+    text-align: left;
+    color: #525ffb;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/** End Header Css **/
+
+
+/** Start Hero Css **/
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-section .container-hero {
+    width: 1290px;
+    margin: auto;
+    max-width: 95%;
+}
+
+.hero-section .content-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section .content-hero .left-side {
+    width: 700px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section .content-hero .left-side h1 {
+    font-weight: 700;
+    font-size: 70px;
+    letter-spacing: -0.01em;
+    line-height: 97px;
+    text-align: left;
+    color: #1e1c24;
+}
+
+.hero-section .content-hero .left-side p {
+    width: 90%;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: left;
+    color: #b1aaaa;
+    margin-top: 15px;
+}
+
+.hero-section .content-hero .left-side .form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.hero-section .content-hero .left-side .form-group input {
+    width: 320px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #EBEBEB;
+    border-radius: 40px;
+    padding: 25px 18px;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: rgba(30, 28, 36, 0.85);
+    opacity: 0.36;
+}
+
+.hero-section .content-hero .left-side .form-group button {
+    font-family: inherit;
+    padding: 25px 40px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    background: #525FFB;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    line-height: 27px;
+    text-align: left;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+.hero-section .content-hero .right-side {
+    width: 580px;
+    height: 520px;
+    position: relative;
+}
+
+/**  End Hero Css **/
+
+
+/** Start Serivces Css **/
+
+.services {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.services .header-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services .header-services h2 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: #1e1c24;
+}
+
+.services .container-services {
+    width: 1220px;
+    max-width: 95%;
+    margin: auto;
+}
+
+.services .grid-services {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content: center;
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+
+.services .grid-services .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    border-radius: 11px;
+}
+
+.services .grid-services .card .info {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -20px;
+}
+
+.services .grid-services .card .info h3 {
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.services .grid-services .card .info p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.services .grid-services .card:nth-of-type(1) .info h3 {
+    color: #fff;
+}
+
+.services .grid-services .card:nth-of-type(1) .info p {
+    color: #fff;
+}
+
+.services .grid-services .card:nth-of-type(2) .info h3 {
+    color: #1E1C24;
+}
+
+.services .grid-services .card:nth-of-type(2) .info p {
+    color: #1E1C24;
+}
+
+.services .grid-services .card:nth-of-type(3) .info h3 {
+    color: #1E1C24;
+}
+
+.services .grid-services .card:nth-of-type(3) .info p {
+    color: #1E1C24;
+}
+
+.services .grid-services .card:nth-of-type(1) {
+    background: #525FFB;
+}
+
+.services .grid-services .card:nth-of-type(2) {
+    background: #E9F0FF;
+    position: relative;
+    top: 50px;
+}
+
+.services .grid-services .card:nth-of-type(3) {
+    background: #FFE7AA;
+}
+
+/** End Services Css **/
+
+/** Start Management Css **/
+
+.management {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.management .container-management {
+    width: 1290px;
+    margin: auto;
+    max-width: 95%;
+}
+
+.management .content-management {
+    display: flex;
+    flex-direction: column;
+}
+
+.management .content-management .item {
+    display: flex;
+    align-items: center;
+}
+
+.management .content-management .item:not(:last-child) {
+    margin-bottom: 200px;
+}
+
+.management .content-management .item:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.management .content-management .item .left-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.management .content-management .item .left-side img {
+    object-fit: contain;
+}
+
+.management .content-management .item .right-side {
+    width: 500px;
+    max-width: 95%;
+    margin-left: 40px;
+}
+
+.management .content-management .item .right-side h3 {
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    text-align: left;
+    color: #1e1c24;
+}
+
+.management .content-management .item .right-side p {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: left;
+    color: #b1aaaa;
+    margin-top: 16px;
+}
+
+.management .content-management .item .right-side button {
+    padding: 15px 40px;
+    border-radius: 30px;
+    background: #525FFB;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/** End Management Css **/
+
+/** Start Trust Us Css **/
+
+.trustus {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0;
+}
+
+.trustus .header-trustus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.trustus .header-trustus h2 {
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    color: #1e1c24;
+}
+
+.trustus .container-trustus {
+    width: 1290px;
+    margin: auto;
+    max-width: 95%;
+}
+
+.trustus .content-trustus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.trustus .content-trustus h3 {
+
+    font-weight: normal;
+    font-size: 150px;
+    line-height: 60px;
+    text-align: center;
+    color: #525ffb;
+
+}
+
+.trustus .content-trustus img {
+    object-fit: contain;
+}
+
+/** End Trust Us Css **/
+
+
+/** Start Footer Css **/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    border-top: 1px solid #E6E6E6;
+}
+
+footer .header-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .header-footer h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    color: #1e1c24;
+    margin-bottom: 20px;
+}
+
+footer .header-footer h5 {
+    width: 500px;
+    max-width: 95%;
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 35px;
+    text-align: center;
+    color: #1e1c24;
+    margin: auto;
+}
+
+footer .form-group {
+    display: flex;
+    align-items: center;
+    margin-top: 35px;
+}
+
+footer .form-group input {
+    width: 320px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #EBEBEB;
+    border-radius: 40px;
+    padding: 20px 14px;
+    font-weight: 300;
+    font-size: 17px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: rgba(30, 28, 36, 0.85);
+    opacity: 0.36;
+}
+
+footer .form-group button {
+    font-family: inherit;
+    padding: 20px 50px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    background: #525FFB;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: 0.05em;
+    line-height: 27px;
+    text-align: left;
+    color: #fff;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 35px;
+}
+
+/** End Footer Css **/

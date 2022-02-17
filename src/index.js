@@ -1,13 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './Screens/App';
 import reportWebVitals from './reportWebVitals';
+import { Provider } from 'react-redux';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import store from './store';
+import axios from 'axios';
+import { loadUser } from './actions/auth';
+
+// checking token from local storage 
+// and then setting in headers and loading user data
+if (localStorage.token) {
+  const token = localStorage.token;
+  
+  if (token) {
+    axios.defaults.headers.common['x-auth-token'] = token;
+    store.dispatch(loadUser()) ;
+  } else {
+    delete axios.defaults.headers.common['x-auth-token'];
+  }
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
