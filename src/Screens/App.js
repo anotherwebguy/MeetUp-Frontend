@@ -12,12 +12,12 @@ import Home from './Homepage/Home.js';
 import Login from './Authentication/Signin.js';
 import Register from './Authentication/Signup.js';
 import { ToastContainer } from 'react-toastify';
-// import Dashboard from './Dashboard/Dashboard.js';
-// import Room from './Room/Room.js';
-// import Loading from './Room/Loading.js';
-// import ChatRoomJoining from './Channel/ChatRoomJoining.js';
-// import Calendar from './Calendar/Calendar.js';
-// import Container from './WhiteBoard/Container.js';
+import Dashboard from './Dashboard/Dashboard.js';
+import Room from './Room/Room.js';
+import Loading from './Room/Loading.js';
+import ChatRoomJoining from './Channel/ChatRoomJoining.js';
+import Calendar from './Calendar/Calendar.js';
+import Container from './WhiteBoard/Container.js';
 import Page404 from './Page404.js';
 import 'react-toastify/dist/ReactToastify.css';
 import ErrorPage from './ErrorPage.js';
@@ -57,7 +57,7 @@ function App(props) {
           <Route exact path='/' component={Home} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
-          {/* <Route path='/calendar' component={Calendar} />
+          <Route path='/calendar' component={Calendar} />
           <PrivateRoute
             path='/dashboard'
             component={Dashboard}
@@ -78,7 +78,7 @@ function App(props) {
             component={Container}
             isAuthenticated={props.auth.isAuthenticated}
           />
-          <Route path='/loading' component={Loading} /> */}
+          <Route path='/loading' component={Loading} />
           <Route path='/error' component={ErrorPage} />
           <Route component={Page404} />
         </Switch>
