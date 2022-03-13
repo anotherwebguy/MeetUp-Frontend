@@ -11,6 +11,7 @@ import {
   Resize,
 } from '@syncfusion/ej2-react-schedule';
 import '../../assets/css/calendar.css';
+// import { ToastComponent } from '@syncfusion/ej2-react-notifications';
 import jwtDecode from 'jwt-decode';
 import axios from 'axios';
 

@@ -6,21 +6,21 @@ import {
   Redirect,
 } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Home from './HomePage/Home.js';
 import { connect } from 'react-redux';
 import '../assets/css/App.css';
-import Home from './Homepage/Home.js';
-import Login from './Authentication/Signin.js';
-import Register from './Authentication/Signup.js';
-import ChatRoomJoining from './Channel/ChatRoomJoining.js';
-import Loading from './Room/Loading.js';
-import Room from './Room/Room.js';
-import ErrorPage from './ErrorPage.js';
+import Login from './Auth/Login.js';
+import Register from './Auth/Register.js';
+import Page404 from './Page404.js';
 import Dashboard from './Dashboard/Dashboard.js';
+import Room from './Room/Room.js';
+import Loading from './Room/Loading.js';
+import ChatRoomJoining from './Channel/ChatRoomJoining.js';
+import ErrorPage from './ErrorPage.js';
 import Calendar from './Calendar/Calendar.js';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Container from './WhiteBoard/Container.js';
-import Page404 from './Page404.js';
 
 // private route definition
 const PrivateRoute = (privateRouteProps) => {
