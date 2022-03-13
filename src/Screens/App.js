@@ -11,8 +11,15 @@ import '../assets/css/App.css';
 import Home from './Homepage/Home.js';
 import Login from './Authentication/Signin.js';
 import Register from './Authentication/Signup.js';
+import ChatRoomJoining from './Channel/ChatRoomJoining.js';
+import Loading from './Room/Loading.js';
+import Room from './Room/Room.js';
+import ErrorPage from './ErrorPage.js';
+import Dashboard from './Dashboard/Dashboard.js';
+import Calendar from './Calendar/Calendar.js';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Container from './WhiteBoard/Container.js';
 import Page404 from './Page404.js';
 
 // private route definition
@@ -50,6 +57,29 @@ function App(props) {
           <Route exact path='/' component={Home} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
+          <Route path='/calendar' component={Calendar} />
+          <PrivateRoute
+            path='/dashboard'
+            component={Dashboard}
+            isAuthenticated={props.auth.isAuthenticated}
+          />
+          <PrivateRoute
+            path='/invite/:chatRoomId'
+            component={ChatRoomJoining}
+            isAuthenticated={props.auth.isAuthenticated}
+          />
+          <PrivateRoute
+            path='/room/:roomId'
+            component={Room}
+            isAuthenticated={props.auth.isAuthenticated}
+          />
+          <PrivateRoute
+            path='/board/:roomId'
+            component={Container}
+            isAuthenticated={props.auth.isAuthenticated}
+          />
+          <Route path='/loading' component={Loading} />
+          <Route path='/error' component={ErrorPage} />
           <Route component={Page404} />
         </Switch>
       </div>
