@@ -169,9 +169,9 @@ function Register(props) {
               </Grid>
             </Grid>
           </form>
-          <p>or</p>
+          {/* <p>or</p> */}
           
-          <GoogleLogin
+          {/* <GoogleLogin
             clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
             render={(renderProps) => (
               <GoogleButton onClick={renderProps.onClick} disabled={false} />
@@ -179,7 +179,7 @@ function Register(props) {
             onSuccess={googleSuccess}
             onFailure={googleFailure}
             cookiePolicy='single_host_origin'
-          />
+          /> */}
         </div>
         <Box mt={5}></Box>
       </Container>

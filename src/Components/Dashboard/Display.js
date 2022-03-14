@@ -206,9 +206,9 @@ function Display(props) {
                 </button>
               </Link>
             </div>
-            <div onClick={() => setClicked(!clicked)}>
+            {/* <div onClick={() => setClicked(!clicked)}>
               <button className='b'>Schedule A Meeting For Later</button>
-            </div>
+            </div> */}
           </div>
         </>
       )}

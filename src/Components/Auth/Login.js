@@ -135,8 +135,8 @@ function Login(props) {
               </Grid>
             </Grid>
           </form>
-          <p className={classes.para}>or</p>
-          <GoogleLogin
+          {/* <p className={classes.para}>or</p> */}
+          {/* <GoogleLogin
             clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
             render={(renderProps) => (
               <GoogleButton onClick={renderProps.onClick} disabled={false} />
@@ -144,7 +144,7 @@ function Login(props) {
             onSuccess={googleSuccess}
             onFailure={googleFailure}
             cookiePolicy='single_host_origin'
-          />
+          /> */}
         </div>
         <Box mt={8}></Box>
       </Container>

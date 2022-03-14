@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './Screens/App';
+import App from './Components/App';
 import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import store from './store';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import { loadUser } from './actions/auth';
 

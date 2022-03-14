@@ -51,9 +51,9 @@ export default function NewChatForm(props) {
 
   return (
     <div>
-      <button className='new-chat-btn' onClick={handleClickOpen}>
+      {/* <button className='new-chat-btn' onClick={handleClickOpen}>
         New Chat
-      </button>
+      </button> */}
       <Dialog
         open={open}
         onClose={handleClose}
