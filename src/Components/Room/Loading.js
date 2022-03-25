@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import "../../assets/css/loading.css" ;
-import uuid from 'react-uuid' ;
+import uuid from 'uuid' ;
 
 function Loading(props) {
 
