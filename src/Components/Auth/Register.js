@@ -12,8 +12,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { connect } from 'react-redux';
 import { register } from '../../actions/auth';
-import { GoogleLogin } from 'react-google-login';
-import GoogleButton from 'react-google-button';
+// import { GoogleLogin } from 'react-google-login';
+// import GoogleButton from 'react-google-button';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
