@@ -12,8 +12,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { connect } from 'react-redux';
 import { login } from '../../actions/auth';
-import { GoogleLogin } from 'react-google-login';
-import GoogleButton from 'react-google-button';
+// import { GoogleLogin } from 'react-google-login';
+// import GoogleButton from 'react-google-button';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
   
@@ -48,23 +48,23 @@ function Login(props) {
     await props.dispatch(login(email, password));
   };
 
-  const googleSuccess = async (res) => {
-    console.log(res);
-    let email = res?.profileObj.email;
-    let password = res?.tokenId;
+  // const googleSuccess = async (res) => {
+  //   console.log(res);
+  //   let email = res?.profileObj.email;
+  //   let password = res?.tokenId;
 
-    try {
-      await props.dispatch(login(email, password));
-    } catch (error) {
-      notify('Unable to register !');
+  //   try {
+  //     await props.dispatch(login(email, password));
+  //   } catch (error) {
+  //     notify('Unable to register !');
 
-      console.log(error);
-    }
-  };
+  //     console.log(error);
+  //   }
+  // };
 
-  const googleFailure = (err) => {
-    console.log('Google Sign in Unsuccessful', err);
-  };
+  // const googleFailure = (err) => {
+  //   console.log('Google Sign in Unsuccessful', err);
+  // };
 
   const { isAuthenticated } = props.auth;
   const { from } = props.location.state || { from: { pathname: '/dashboard' } };

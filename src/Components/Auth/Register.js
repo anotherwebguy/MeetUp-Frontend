@@ -12,8 +12,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { connect } from 'react-redux';
 import { register } from '../../actions/auth';
-import { GoogleLogin } from 'react-google-login';
-import GoogleButton from 'react-google-button';
+// import { GoogleLogin } from 'react-google-login';
+// import GoogleButton from 'react-google-button';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -55,23 +55,23 @@ function Register(props) {
     await props.dispatch(register({ name, email, password }));
   };
 
-  const googleSuccess = async (res) => {
-    console.log(res);
-    let email = res?.profileObj.email;
-    let name = res?.profileObj.name;
-    let password = res?.tokenId;
+  // const googleSuccess = async (res) => {
+  //   console.log(res);
+  //   let email = res?.profileObj.email;
+  //   let name = res?.profileObj.name;
+  //   let password = res?.tokenId;
 
-    try {
-      await props.dispatch(register({ name, email, password }));
-    } catch (error) {
-      console.log(error);
-    }
-  };
+  //   try {
+  //     await props.dispatch(register({ name, email, password }));
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
 
-  const googleFailure = (error) => {
-    // notify('Google Auth Failed !');
-    console.log(error);
-  };
+  // const googleFailure = (error) => {
+  //   // notify('Google Auth Failed !');
+  //   console.log(error);
+  // };
 
   const { isAuthenticated } = props.auth;
   const { from } = props.location.state || { from: { pathname: '/dashboard' } };
