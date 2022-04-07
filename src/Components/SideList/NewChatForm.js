@@ -31,9 +31,9 @@ export default function NewChatForm(props) {
    });
 
 
-  // const handleClickOpen = () => {
-  //   setOpen(true);
-  // };
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
 
   const handleClose = () => {
     setOpen(false);
@@ -51,9 +51,9 @@ export default function NewChatForm(props) {
 
   return (
     <div>
-      {/* <button className='new-chat-btn' onClick={handleClickOpen}>
+      <button className='new-chat-btn' onClick={handleClickOpen}>
         New Chat
-      </button> */}
+      </button>
       <Dialog
         open={open}
         onClose={handleClose}
