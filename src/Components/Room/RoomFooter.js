@@ -116,7 +116,7 @@ const RoomFooter = ({
             icon={faInfo}
           />
         </div>
-        {/* {info ? (
+        {info ? (
           <Dialog open={info} fullWidth aria-labelledby='form-dialog-title'>
             <DialogTitle id='form-dialog-title'>Meeting Link</DialogTitle>
             <DialogContent>
@@ -136,7 +136,7 @@ const RoomFooter = ({
               </Button>
             </DialogActions>
           </Dialog>
-        ) : null} */}
+        ) : null}
         <div
           data-tip='Invite Others'
           className='icon-block'
@@ -171,7 +171,7 @@ const RoomFooter = ({
             icon={isVideo ? faVideo : faVideoSlash}
           />
         </div>
-        {/* {isPresenting ? (
+        {isPresenting ? (
           <div
             className='icon-block'
             onClick={stopScreenShare}
@@ -202,7 +202,7 @@ const RoomFooter = ({
               icon={faChalkboardTeacher}
             />
           </div>
-        </Link> */}
+        </Link>
       </div>
       <ReactTooltip />
     </div>
