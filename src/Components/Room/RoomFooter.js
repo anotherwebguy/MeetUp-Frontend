@@ -3,16 +3,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faVideo,
   faMicrophone,
-  //faDesktop,
+  faDesktop,
   faMicrophoneSlash,
   faVideoSlash,
   faPlus,
-  //faChalkboardTeacher,
+  faChalkboardTeacher,
   faInfo,
-  //faCopy,
+  faCopy,
 } from '@fortawesome/free-solid-svg-icons';
 import '../../assets/css/pageFooter.css';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
@@ -24,9 +24,9 @@ import axios from 'axios';
 import ReactTooltip from 'react-tooltip'
 
 const RoomFooter = ({
-  // isPresenting,
-  // stopScreenShare,
-  // screenShare,
+  isPresenting,
+  stopScreenShare,
+  screenShare,
   isAudio,
   toggleAudio,
   isVideo,
@@ -35,8 +35,8 @@ const RoomFooter = ({
   url,
   userName,
   userEmail,
-  //handleSubmit,
-  //roomId,
+  handleSubmit,
+  roomId,
 }) => {
   const [clicked, setClicked] = useState(false);
   const [info, setInfo] = useState(false);
